@@ -14,6 +14,8 @@
 - has_many :rooms, through: :room_users
 - has_many :messages
 
+
+
 ## rooms テーブル
 
 | Column | Type   | Options     |
@@ -26,7 +28,9 @@
 - has_many :users, through: :room_users
 - has_many :messages
 
-## room_users テーブル
+
+
+## room_users テーブル (中間テーブル)
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
@@ -37,6 +41,8 @@
 
 - belongs_to :room
 - belongs_to :user
+
+
 
 ## messages テーブル
 
